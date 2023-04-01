@@ -366,7 +366,7 @@ button:focus:not(:focus-visible) {
 /* to make the nav-show the active */
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link:hover {
-  color: var(--dark-color);
+  color: var(--primary-color);
 }
 
 .navbar-toggler {
