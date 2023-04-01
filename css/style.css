@@ -287,12 +287,11 @@ button:focus:not(:focus-visible) {
 .overlay.dark-overlay {
   background: rgba(0, 0, 0, 0.75);
 }
-
+/* TO STYLE THE ABOUT US LINKS AND TABS */
 .nav-tabs .nav-link {
-  background: transparent;
   border-radius: 0.8em 0.8em 0em 0em;
   transition: 200ms ease-in-out;
-  color: var(--border-color);
+  color: var(--black);
   font-weight: var(--font-weight-bold);
   margin: auto;
   position: relative;
@@ -330,7 +329,7 @@ button:focus:not(:focus-visible) {
 }
 
 .sticky-nav .navbar-brand {
-  color: var(--dark-color);
+  color: var(--primary-color);
 }
 
 .sticky-nav .navbar-nav .nav-link {
@@ -426,6 +425,10 @@ button:focus:not(:focus-visible) {
 
 .navbar-toggler .navbar-toggler-icon::after {
   top: 8px;
+}
+/* to make the logo not change effect on hover */
+#navbar-brand:hover {
+  color: var(--white-color);
 }
 
 /*---------------------------------------
