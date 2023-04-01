@@ -202,7 +202,7 @@ strong {
 }
 
 /*---------------------------------------
-  FAQ ACCORDION               
+ABOUT PAGE STYLING********************************************************************************************************************************************              
 -----------------------------------------*/
 .accordion-item {
   background-color: transparent;
@@ -250,6 +250,9 @@ button:focus:not(:focus-visible) {
 
 .accordion-body {
   padding: 2rem 0;
+}
+.about-btn {
+  background-color: var(--primary-color);
 }
 
 /*---------------------------------------
@@ -423,65 +426,7 @@ button:focus:not(:focus-visible) {
 }
 
 /*---------------------------------------
-  OUR WORK              
------------------------------------------*/
-.work-thumb {
-  position: relative;
-  overflow: hidden;
-}
-
-.work-thumb-text {
-  padding: 20px 30px;
-}
-
-.work-thumb:hover .work-image {
-  opacity: 1;
-  transform: scale(1.05);
-}
-
-.work-text-info {
-  background: var(--section-bg-color);
-  border-radius: 0.3rem;
-  border-bottom: 5px solid var(--border-color);
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  padding: 20px;
-  width: 85%;
-  margin: auto;
-  margin-bottom: 20px;
-  transition: filter 0.5s;
-}
-
-.work-thumb:hover .work-text-info {
-  filter: blur(2px);
-}
-
-.work-title {
-  display: block;
-  margin-bottom: 0;
-}
-
-.work-image {
-  border-radius: 0.3rem;
-  transition: all 0.5s;
-}
-
-.work-tag {
-  border-radius: 100px;
-  color: var(--p-color);
-  font-size: 12px;
-  font-weight: var(--font-weight-light);
-  padding: 2px 10px;
-  display: inline-block;
-  vertical-align: top;
-  margin-right: 7px;
-  margin-bottom: 10px;
-}
-
-/*---------------------------------------
-  CUSTOM FORM               
+  SUBSCRIBE TO OUR NEWS LETTER FORM            
 -----------------------------------------*/
 .custom-form .form-control {
   padding-top: 13px;
@@ -523,95 +468,6 @@ button:focus:not(:focus-visible) {
 .subscribe-form button[type='submit'] {
   background: var(--white-color);
   color: var(--dark-color);
-}
-
-/*---------------------------------------
-  PRICING PLANS               
------------------------------------------*/
-.pricing {
-  background-image: url('../images/maria-stewart-p4tj0g-_aMM-unsplash.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-}
-
-.pricing .container {
-  position: relative;
-  z-index: 2;
-}
-
-.pricing-plan {
-  padding: 60px 40px 40px 40px;
-  position: relative;
-}
-
-.pricing-header {
-  border-bottom: 1px solid #dee2e6;
-  padding-bottom: 30px;
-}
-
-.pricing-icon {
-  font-size: 45px;
-}
-
-.pricing-name {
-  margin-left: 50px;
-}
-
-.pricing-price {
-  margin-left: auto;
-}
-
-.pricing-recommend {
-  background: var(--primary-color);
-  color: var(--white-color);
-  font-size: 12px;
-  font-weight: bold;
-  text-transform: uppercase;
-  padding: 10px 20px;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-.pricing-body {
-  margin-top: 60px;
-  margin-right: 50px;
-  margin-left: 95px;
-}
-
-.pricing-list {
-  padding-left: 15px;
-}
-
-.pricing-list-item {
-  color: var(--p-color);
-  font-size: var(--p-font-size);
-  font-weight: var(--font-weight-light);
-  line-height: normal;
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-
-/*---------------------------------------
-  SERVICES               
------------------------------------------*/
-.services {
-  background: var(--section-bg-color);
-}
-
-.services-image {
-  display: block;
-  margin: auto;
-  width: 250px;
-  height: 250px;
-}
-
-.services-info {
-  background: var(--white-color);
-  position: relative;
-  text-align: center;
 }
 
 /*---------------------------------------
