@@ -6,42 +6,41 @@ https://www.tooplate.com/view/2128-tween-agency
 
 */
 
-
 /*---------------------------------------
   CUSTOM PROPERTIES ( VARIABLES )             
 -----------------------------------------*/
 :root {
-  --white-color:                  #FFFFFF;
-  --primary-color:                #38b083;
-  --section-bg-color:             #f5f5f5;
-  --border-color:                 #dee2e6;
-  --dark-color:                   #000000;
-  --grey-color:                   #fcfeff;
-  --title-color:                  #565758;
-  --p-color:                      #717275;
-  --footer-bg-color:              #07262e;
+  --white-color: #ffffff;
+  --primary-color: #a45b37;
+  --section-bg-color: #f5f5f5;
+  --border-color: #dee2e6;
+  --dark-color: #00a89d;
+  --grey-color: #fcfeff;
+  --title-color: #565758;
+  --p-color: #717275;
+  --footer-bg-color: #07262e;
 
-  --body-font-family:             'Karla', sans-serif;
+  --body-font-family: 'Karla', sans-serif;
 
-  --h1-font-size:                 68px;
-  --h2-font-size:                 42px;
-  --h3-font-size:                 36px;
-  --h4-font-size:                 32px;
-  --h5-font-size:                 24px;
-  --h6-font-size:                 22px;
-  --p-font-size:                  18px;
-  --menu-font-size:               18px;
-  --copyright-text-font-size:     16px;
-  --custom-link-font-size:        14px;
+  --h1-font-size: 48px;
+  --h2-font-size: 42px;
+  --h3-font-size: 36px;
+  --h4-font-size: 32px;
+  --h5-font-size: 24px;
+  --h6-font-size: 22px;
+  --p-font-size: 18px;
+  --menu-font-size: 18px;
+  --copyright-text-font-size: 16px;
+  --custom-link-font-size: 14px;
 
-  --font-weight-light:            300;
-  --font-weight-normal:           400;
-  --font-weight-bold:             600;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-bold: 600;
 }
 
 body {
-    background: var(--white-color);
-    font-family: var(--body-font-family); 
+  background: var(--white-color);
+  font-family: var(--body-font-family);
 }
 
 /*---------------------------------------
@@ -96,7 +95,7 @@ p {
   font-weight: var(--font-weight-light);
 }
 
-a, 
+a,
 button {
   touch-action: manipulation;
   transition: all 0.3s;
@@ -135,17 +134,20 @@ strong {
   padding: 50px;
 }
 
+.navbar-brand i {
+  margin-right: 12px;
+}
 
-.navbar-brand i { margin-right: 12px; }
-
-.backstretch { max-width: 99.99%; }
+.backstretch {
+  max-width: 99.99%;
+}
 
 /*---------------------------------------
   CUSTOM ICON               
 -----------------------------------------*/
 .play-icon-wrap {
   background: var(--white-color);
-  border-radius: .3rem;
+  border-radius: 0.3rem;
   position: relative;
   z-index: 2;
   padding: 10px 12px;
@@ -182,7 +184,10 @@ strong {
   font-weight: var(--font-weight-bold);
   padding: 12px 24px;
 }
-
+.CTA {
+  outline: transparent;
+  border: none;
+}
 .custom-bg-dark {
   background: var(--primary-color);
 }
@@ -231,7 +236,7 @@ button:focus:not(:focus-visible) {
 }
 
 .accordion-body {
-  border-top: 1px solid rgba(0,0,0,.125);
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
 }
 
 .accordion-button {
@@ -264,12 +269,12 @@ button:focus:not(:focus-visible) {
 @media screen and (min-width: 991px) {
   .hero {
     height: 75vh;
-	min-height: 600px;
+    min-height: 600px;
   }
 }
 
 .overlay {
-  background: rgba(128,142,176, 0.5);
+  background: rgba(128, 142, 176, 0.5);
   position: absolute;
   top: 0;
   right: 0;
@@ -279,7 +284,7 @@ button:focus:not(:focus-visible) {
 }
 
 .overlay.dark-overlay {
-  background: rgba(0,0,0, 0.75);
+  background: rgba(0, 0, 0, 0.75);
 }
 
 .nav-tabs .nav-link {
@@ -295,12 +300,12 @@ button:focus:not(:focus-visible) {
 }
 
 .nav-tabs .nav-link:hover,
-.nav-tabs .nav-item.show .nav-link, 
+.nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link.active {
   background: transparent;
   border-color: transparent;
   border-bottom-color: var(--primary-color);
-  color: var(--dark-color);
+  color: var(#00a89d);
 }
 
 /*---------------------------------------
@@ -315,7 +320,7 @@ button:focus:not(:focus-visible) {
 
 .sticky-nav {
   background: var(--white-color);
-  box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
 }
 
 .sticky-nav .navbar-brand {
@@ -343,10 +348,10 @@ button:focus:not(:focus-visible) {
   padding-top: 15px;
   padding-bottom: 15px;
 }
-
-.navbar-nav .nav-link.active, 
+/* to make the nav-show the active */
+.navbar-nav .nav-link.active,
 .navbar-nav .nav-link:hover {
-  color: var(--primary-color);
+  color: var(--dark-color);
 }
 
 .navbar-toggler {
@@ -364,23 +369,24 @@ button:focus:not(:focus-visible) {
   box-shadow: none;
 }
 
-.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+.navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   background: transparent;
 }
 
-.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before,
-.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
+.navbar-toggler[aria-expanded='true'] .navbar-toggler-icon:before,
+.navbar-toggler[aria-expanded='true'] .navbar-toggler-icon:after {
   transition: top 300ms 50ms ease, -webkit-transform 300ms 350ms ease;
   transition: top 300ms 50ms ease, transform 300ms 350ms ease;
-  transition: top 300ms 50ms ease, transform 300ms 350ms ease, -webkit-transform 300ms 350ms ease;
+  transition: top 300ms 50ms ease, transform 300ms 350ms ease,
+    -webkit-transform 300ms 350ms ease;
   top: 0;
 }
 
-.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
+.navbar-toggler[aria-expanded='true'] .navbar-toggler-icon:before {
   transform: rotate(45deg);
 }
 
-.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
+.navbar-toggler[aria-expanded='true'] .navbar-toggler-icon:after {
   transform: rotate(-45deg);
 }
 
@@ -397,7 +403,8 @@ button:focus:not(:focus-visible) {
 .navbar-toggler .navbar-toggler-icon:after {
   transition: top 300ms 350ms ease, -webkit-transform 300ms 50ms ease;
   transition: top 300ms 350ms ease, transform 300ms 50ms ease;
-  transition: top 300ms 350ms ease, transform 300ms 50ms ease, -webkit-transform 300ms 50ms ease;
+  transition: top 300ms 350ms ease, transform 300ms 50ms ease,
+    -webkit-transform 300ms 50ms ease;
   position: absolute;
   right: 0;
   left: 0;
@@ -434,7 +441,7 @@ button:focus:not(:focus-visible) {
 
 .work-text-info {
   background: var(--section-bg-color);
-  border-radius: .3rem;
+  border-radius: 0.3rem;
   border-bottom: 5px solid var(--border-color);
   position: absolute;
   bottom: 0;
@@ -457,7 +464,7 @@ button:focus:not(:focus-visible) {
 }
 
 .work-image {
-  border-radius: .3rem;
+  border-radius: 0.3rem;
   transition: all 0.5s;
 }
 
@@ -486,7 +493,7 @@ button:focus:not(:focus-visible) {
   font-weight: var(--font-weight-normal);
 }
 
-.custom-form button[type="submit"] {
+.custom-form button[type='submit'] {
   background: var(--primary-color);
   border: 0;
   color: var(--white-color);
@@ -494,8 +501,8 @@ button:focus:not(:focus-visible) {
   transition: all 0.3s;
 }
 
-.custom-form button[type="submit"]:hover,
-.custom-form button[type="submit"]:focus {
+.custom-form button[type='submit']:hover,
+.custom-form button[type='submit']:focus {
   background: var(--dark-color);
   color: var(--white-color);
 }
@@ -513,7 +520,7 @@ button:focus:not(:focus-visible) {
   border-radius: 0;
 }
 
-.subscribe-form button[type="submit"] {
+.subscribe-form button[type='submit'] {
   background: var(--white-color);
   color: var(--dark-color);
 }
@@ -621,7 +628,7 @@ button:focus:not(:focus-visible) {
 }
 
 .tooplate-link a {
-	color: var(--white-color);
+  color: var(--white-color);
 }
 
 .footer-menu {
@@ -636,7 +643,7 @@ button:focus:not(:focus-visible) {
 .footer-menu-link,
 .footer-link {
   display: inline-block;
-  color: rgba(255,255,255,0.8);
+  color: rgba(255, 255, 255, 0.8);
   font-size: var(--copyright-text-font-size);
   margin-top: 5px;
   margin-bottom: 5px;
@@ -720,7 +727,7 @@ button:focus:not(:focus-visible) {
   h6 {
     font-size: 18px;
   }
-	
+
   .section-padding {
     padding-top: 80px;
     padding-bottom: 80px;
