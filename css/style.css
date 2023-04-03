@@ -15,7 +15,7 @@ https://www.tooplate.com/view/2128-tween-agency
   --black: #333;
   --section-bg-color: #f5f5f5;
   --border-color: #dee2e6;
-  --dark-color: #00a89d;
+  --dark-color: #02ccbf;
   --grey-color: #fcfeff;
   --title-color: #565758;
   --p-color: #717275;
@@ -109,9 +109,14 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  color: var(--primary-color);
+#navbar-brand {
+  pointer-events: none;
 }
+
+
+/* -------------------NAVBAR HOVER -------------- */
+
+
 
 ::selection {
   background: var(--primary-color);
@@ -134,6 +139,7 @@ a:hover {
 
 #section_2 p {
   color: #7c7c7c;
+  font-weight: 600;
 }
 b,
 strong {
@@ -169,7 +175,7 @@ strong {
   color: var(--white-color);
   border-radius: 100px;
   font-size: 20px;
-  width: 30px;
+  width: 3px;
   height: 30px;
   line-height: 30px;
   display: inline-block;
@@ -346,6 +352,12 @@ button:focus:not(:focus-visible) {
   color: var(--p-color);
 }
 
+.sticky-nav .navbar-nav .nav-link.active {
+  color: #06988e;
+  border-bottom: 1px solid #258c85;
+}
+
+
 .navbar-brand {
   font-size: 40px;
   color: var(--white-color);
@@ -366,7 +378,8 @@ button:focus:not(:focus-visible) {
 /* to make the nav-show the active */
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link:hover {
-  color: var(--primary-color);
+  color: #08f0e0;
+  border-bottom: 1px solid #08f0e0;
 }
 
 .navbar-toggler {
@@ -436,11 +449,30 @@ button:focus:not(:focus-visible) {
 .navbar-toggler .navbar-toggler-icon::after {
   top: 8px;
 }
-/* to make the logo not change effect on hover */
-#navbar-brand:hover {
-  color: var(--white-color);
+/* ---------------------------------------
+  VALUES SECTION
+------------------------------------------*/
+
+.value-container {
+  display: grid;
+  max-width: 600px;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 50px;
+  margin: 0 auto;
 }
 
+.value-container div{
+  font-size: 34px;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.value-container i{
+  max-width: 220px;
+  border-radius: 10px;
+  padding: 16px;
+  border: 2px solid rgb(0, 0, 0);
+}
 /*---------------------------------------
   SUBSCRIBE TO OUR NEWSLETTER FORM            
 -----------------------------------------*/
