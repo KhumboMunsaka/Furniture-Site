@@ -321,7 +321,11 @@ button:focus:not(:focus-visible) {
 .FAQ {
   color: var(--black);
 }
-
+#section_1 {
+  background-image: url(/images/slide/pexels-eric-mufasa-1350789.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 /*---------------------------------------
   TO STYLE THE NAVBAR*****************************************************************************************************************************************************************************************            
 -----------------------------------------*/

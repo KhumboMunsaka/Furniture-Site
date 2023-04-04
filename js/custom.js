@@ -19,12 +19,12 @@
     });
 
     // BACKSTRETCH SLIDESHOW
-    $('#section_1').backstretch([
-      "../images/slide/pexels-pixabay-433200.jpg",
-      "../images/slide/pexels-eric-mufasa-1350789.jpg",
-      "../images/slide/pexels-freemockupsorg-775219.jpg",
-      "../images/slide/pexels-pixabay-276528.jpg"
-    ],  {duration: 2000, fade: 750});
+    // $('#section_1').backstretch([
+    //   "../images/slide/pexels-pixabay-433200.jpg",
+    //   "../images/slide/pexels-eric-mufasa-1350789.jpg",
+    //   "../images/slide/pexels-freemockupsorg-775219.jpg",
+    //   "../images/slide/pexels-pixabay-276528.jpg"
+    // ],  {duration: 2000, fade: 750});
     
   })(window.jQuery);
 
