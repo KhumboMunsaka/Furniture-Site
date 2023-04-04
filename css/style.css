@@ -10,16 +10,17 @@ https://www.tooplate.com/view/2128-tween-agency
   CUSTOM PROPERTIES ( VARIABLES )             
 -----------------------------------------*/
 :root {
-  --white-color: #ffffff;
+  --white-color: #f6f6f6;
   --primary-color: #a45b37;
   --black: #333;
   --section-bg-color: #f5f5f5;
   --border-color: #dee2e6;
-  --dark-color: #02ccbf;
+  --dark-color: #361e12;
   --grey-color: #fcfeff;
   --title-color: #565758;
   --p-color: #717275;
-  --footer-bg-color: #07262e;
+  --grey: #dedede;
+  --footer-bg-color: #754228;
 
   --body-font-family: 'Karla', sans-serif;
 
@@ -131,12 +132,16 @@ a {
 }
 
 #section_2 {
-  background-color: #06639d47;
+  background-color: var(--white-color);
 }
 
 #section_2 p {
   color: #7c7c7c;
   font-weight: 600;
+}
+
+#section_3 {
+  background-color: var(--grey);
 }
 b,
 strong {
@@ -451,9 +456,9 @@ button:focus:not(:focus-visible) {
 
 .value-container {
   display: grid;
-  max-width: 600px;
+  max-width: 34em;
   grid-template-columns: 1fr 1fr;
-  row-gap: 50px;
+  gap: 3em;
   margin: 0 auto;
 }
 
@@ -464,7 +469,7 @@ button:focus:not(:focus-visible) {
 }
 
 .value-container i {
-  max-width: 220px;
+  max-width: 20em;
   border-radius: 10px;
   padding: 16px;
   border: 2px solid rgb(0, 0, 0);
@@ -517,6 +522,10 @@ button:focus:not(:focus-visible) {
 .phone-number {
   margin-top: 2em;
   font-size: x-large;
+}
+.number {
+  text-decoration: underline;
+  color: blue;
 }
 /*---------------------------------------
   SEARCH BAR         
