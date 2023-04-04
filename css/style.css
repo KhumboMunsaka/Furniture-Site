@@ -152,9 +152,9 @@ strong {
   padding: 50px;
 }
 
-.navbar-brand i {
+/* .navbar-brand i {
   margin-right: 12px;
-}
+} */
 
 .backstretch {
   max-width: 99.99%;
@@ -338,7 +338,6 @@ button:focus:not(:focus-visible) {
   padding-top: 15px;
   padding-bottom: 15px;
   transition: background 0.3s ease-out;
-  overflow: visible;
 }
 
 .sticky-nav {
@@ -453,12 +452,15 @@ button:focus:not(:focus-visible) {
 /* ---------------------------------------
   VALUES SECTION
 ------------------------------------------*/
+#section_3 {
+  background-color: rgba(31, 153, 169, 0.2);
+}
 
 .value-container {
   display: grid;
-  max-width: 34em;
+  max-width: 1200px;
   grid-template-columns: 1fr 1fr;
-  gap: 3em;
+  column-gap: 13em;
   margin: 0 auto;
 }
 
@@ -469,11 +471,64 @@ button:focus:not(:focus-visible) {
 }
 
 .value-container i {
-  max-width: 20em;
   border-radius: 10px;
   padding: 16px;
   border: 2px solid rgb(0, 0, 0);
 }
+
+.grid-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 20px;
+  }
+
+ #section_3 p{
+  font-size: 22px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1200px) {
+  .value-container {
+    display: inline-block;
+      }
+
+      #section_3 {
+        align-items: center;
+      }
+
+  .value-container div{
+    margin: 0;
+  }
+
+  .value-container .grid-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    max-width: 900px;
+    }
+
+ 
+}
+
+
+@media screen and (max-width: 770px) {
+  .value-container {
+    display: inline-block;
+    align-items: center;
+      }
+
+      
+  .value-container div{
+    margin: 0;
+  }
+
+  .value-container .grid-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 400px;
+     }
+
+  }
+
 /*---------------------------------------
   SUBSCRIBE TO OUR NEWSLETTER FORM *****************************************************************           
 -----------------------------------------*/
@@ -612,6 +667,21 @@ button:focus:not(:focus-visible) {
   font-size: 20px;
   color: #644bff;
   cursor: pointer;
+}
+
+/*---------------------------------------
+  IMAGES            
+-----------------------------------------*/
+  img {
+    max-height: 400px;
+  }
+
+
+#section_4{
+  background-image: url('../images/pexels-jess-bailey-designs-2647794.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
 }
 
 /*---------------------------------------
