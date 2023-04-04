@@ -322,7 +322,7 @@ button:focus:not(:focus-visible) {
   color: var(--black);
 }
 #section_1 {
-  background-image: url(/images/slide/pexels-eric-mufasa-1350789.jpg);
+  background-image: url(https://images.pexels.com/photos/1350789/pexels-photo-1350789.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
   background-repeat: no-repeat;
   background-size: cover;
 }
