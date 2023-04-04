@@ -480,9 +480,9 @@ button:focus:not(:focus-visible) {
   display: grid;
   grid-template-columns: 1fr 1fr;
   max-width: 20px;
-  }
+}
 
- #section_3 p{
+#section_3 p {
   font-size: 22px;
   font-weight: 600;
 }
@@ -490,34 +490,30 @@ button:focus:not(:focus-visible) {
 @media screen and (max-width: 1200px) {
   .value-container {
     display: inline-block;
-      }
+  }
 
-      #section_3 {
-        align-items: center;
-      }
+  #section_3 {
+    align-items: center;
+  }
 
-  .value-container div{
+  .value-container div {
     margin: 0;
   }
 
   .value-container .grid-1 {
     display: grid;
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: 1fr 1fr;
     max-width: 900px;
-    }
-
- 
+  }
 }
-
 
 @media screen and (max-width: 770px) {
   .value-container {
     display: inline-block;
     align-items: center;
-      }
+  }
 
-      
-  .value-container div{
+  .value-container div {
     margin: 0;
   }
 
@@ -525,9 +521,8 @@ button:focus:not(:focus-visible) {
     display: grid;
     grid-template-columns: 1fr;
     max-width: 400px;
-     }
-
   }
+}
 
 /*---------------------------------------
   SUBSCRIBE TO OUR NEWSLETTER FORM *****************************************************************           
@@ -567,6 +562,9 @@ button:focus:not(:focus-visible) {
 
 .subscribe-form input {
   border-radius: 0;
+}
+.subscribe-form input::placeholder {
+  color: var(--white-color);
 }
 
 .subscribe-form button[type='submit'] {
@@ -672,12 +670,11 @@ button:focus:not(:focus-visible) {
 /*---------------------------------------
   IMAGES            
 -----------------------------------------*/
-  img {
-    max-height: 400px;
-  }
+img {
+  max-height: 400px;
+}
 
-
-#section_4{
+#section_4 {
   background-image: url('../images/pexels-jess-bailey-designs-2647794.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
