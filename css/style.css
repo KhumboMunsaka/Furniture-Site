@@ -1,26 +1,18 @@
-/*
-
-Tooplate 2128 Tween Agency
-
-https://www.tooplate.com/view/2128-tween-agency
-
-*/
-
 /*---------------------------------------
   CUSTOM PROPERTIES ( VARIABLES )             
 -----------------------------------------*/
 :root {
   --white-color: #f6f6f6;
-  --primary-color: #a45b37;
+  --primary-color: #0bc7ba;
   --black: #333;
   --section-bg-color: #f5f5f5;
   --border-color: #dee2e6;
-  --dark-color: #361e12;
+  --dark-color: #025a44;
   --grey-color: #fcfeff;
   --title-color: #565758;
   --p-color: #717275;
   --grey: #dedede;
-  --footer-bg-color: #754228;
+  --footer-bg-color: #1b1715;
 
   --body-font-family: 'Karla', sans-serif;
 
@@ -533,7 +525,7 @@ button:focus:not(:focus-visible) {
 }
 
 .custom-form label {
-  color: var(--p-color);
+  color: var(--white-color);
   font-weight: var(--font-weight-normal);
 }
 
@@ -575,96 +567,11 @@ button:focus:not(:focus-visible) {
 .phone-number {
   margin-top: 2em;
   font-size: x-large;
+  color: var(--white-color);
 }
 .number {
   text-decoration: underline;
   color: blue;
-}
-/*---------------------------------------
-  SEARCH BAR         
------------------------------------------*/
-
-.search {
-  max-width: 450px;
-  margin: 0px;
-}
-
-.search .searchInput {
-  /* background: rgb(255, 255, 255); */
-  width: 150px;
-  border-radius: 5px;
-  margin-left: 10px;
-  position: relative;
-  box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, 0.12);
-}
-
-.searchInput input {
-  height: 60px;
-  width: 100%;
-  /* background-color: #be8a658d; */
-  opacity: 0.6;
-  outline: none;
-  border: none;
-  border-radius: 5px;
-  padding: 0 60px 0 20px;
-  font-size: 18px;
-  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
-}
-
-.searchInput.active input {
-  border-radius: 5px 5px 0 0;
-}
-
-.searchInput .resultBox {
-  padding: 0;
-  opacity: 0;
-  pointer-events: none;
-  max-height: 280px;
-  overflow-y: auto;
-}
-
-.searchInput.active .resultBox {
-  padding: 10px 8px;
-  opacity: 1;
-  pointer-events: auto;
-}
-
-.resultBox li {
-  list-style: none;
-  padding: 8px 12px;
-  margin: 0;
-  display: none;
-  width: 140px;
-  cursor: default;
-  border-radius: 3px;
-  background-color: #bfc6d7;
-  opacity: 0.9;
-}
-
-.resultBox {
-  position: absolute;
-  z-index: 4;
-  margin: 0;
-}
-
-.searchInput.active .resultBox li {
-  display: block;
-}
-.resultBox li:hover {
-  background: #b5bdce95;
-}
-
-.searchInput .icon {
-  position: absolute;
-  right: 0px;
-  top: 0px;
-  height: 55px;
-  width: 55px;
-  text-align: center;
-  line-height: 55px;
-  font-size: 20px;
-  color: #644bff;
-  cursor: pointer;
 }
 
 /*---------------------------------------
@@ -675,9 +582,11 @@ img {
 }
 
 #section_4 {
-  background-image: url('../images/pexels-jess-bailey-designs-2647794.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('https://images.pexels.com/photos/139309/pexels-photo-139309.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-size: cover;
   background-size: 100% 100%;
 }
 
